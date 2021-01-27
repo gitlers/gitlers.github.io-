@@ -1,0 +1,27 @@
+.progress{
+    padding-bottom: 120px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 46px;
+        row-gap: 30px;
+        &-bar{
+            background: #E8E4DE;
+            border-radius: 4px;
+            span{
+                display: block;
+                height: 100%;
+                background: $main-color;
+                border-radius: 4px;
+            }
+        }
+        &-items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+    }
+}

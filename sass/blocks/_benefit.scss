@@ -1,0 +1,104 @@
+.benefit{
+    padding-bottom: 120px;
+
+    &__title{
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+        @include before_circle;
+        &:before{
+            top: 1;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle{
+        text-align: center;
+    }
+    &__divider{
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 60px;
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+    }
+
+    &__grid{
+        padding-left: 72px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        grid-template-rows: 75px 129px 129px;
+        column-gap: 143px;
+        row-gap: 45px;
+        &-subtitle{
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+    }
+    &__grid-title{
+        padding-left: 35px;
+        position: relative;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 9%;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            background: $main-color;
+            border-radius: 100%;
+        }
+
+    }
+    &__grid-circle{
+        position: relative;
+        padding-top: 7px;
+        padding-left: 15px;
+        @include before_circle;
+    }
+
+    &__gird-items{
+        position: relative;
+        display: grid;
+        grid-template-columns: 36px 236px;
+        grid-template-rows: 31px 78px;
+        column-gap: 20px;
+        row-gap: 15px; 
+        padding-left: 35px;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 7%;
+            left: 9px;
+            width: 26px;
+            height: 2px;
+            background: black;
+        
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            top: -76%;
+            left: 7px;
+            width: 2px;
+            height: 177%;
+            background: black;
+        
+        }
+    } 
+    &__grid-text{
+        grid-row: 2 / 3; 
+        grid-column: 1 / 3; 
+
+    }
+
+
+}
