@@ -95,5 +95,8 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 21px;
+        &:active {
+            transform: scale(1.05);
+        }
     }
 }

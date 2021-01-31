@@ -25,6 +25,8 @@ p {
     margin: 0;
 }
 
+@import 'blocks/header';
+@import 'blocks/subheader';
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
@@ -34,6 +36,13 @@ p {
 @import 'blocks/resume';
 @import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/reviews';
+@import 'blocks/promotion';
 @import 'blocks/price';
 @import 'blocks/contacts';
+@import 'blocks/modal';
 @import 'blocks/media';
+
+
+
+

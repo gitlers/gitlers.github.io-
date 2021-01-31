@@ -40,7 +40,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/favicon//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -66,7 +66,38 @@
         <div class="sidepanel__text"><span>Социальные сети</span></div>
     </aside>
 
-    <div class="menu">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <ul class="header__wraper">
+                    <li class="header__item"><a href="" class="header__link">О нас</a></li>
+                    <li class="header__item"><a href="" class="header__link">О мастерах</a></li>
+                    <li class="header__item"><a href="" class="header__link">Этапы работы</a></li>
+                    <li class="header__item"><a href="" class="header__link">Каталог</a></li>
+                    <li class="header__item"><a href="" class="header__link">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="subheader">
+        <div class="container">
+            <div class="subheader__wraper">
+                <div class="subheader__logo">
+                    <img src="img/logo.png"  alt="" class="subheader__icons">
+                </div>
+                <div class="subheader__contacts">
+                    <div class="subheader__contacts-decr">
+                        <div class="subheader__contacts-text">Звоните нам ежедневно</div>
+                        <a href="" class="subheader__contacts-phone">8 922 136 00 90</a>
+                    </div>
+                    <button data-modal="consultation" class="btn subheader__contacts-btn">заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!--   <div class="menu">
         <div class="menu__block">
             <div class="menu__close">
                 <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,17 +137,18 @@
             </div>
         </div>
         <div class="menu__overlay"></div>
-    </div>
+    </div> -->
+
 
     <section class="promo">
-        <div class="hamburger">
+<!--         <div class="hamburger">
             <span></span>
             <span class="long"></span>
             <span></span>
-        </div>
+        </div> -->
         <div class="container">
-            <div class="title title_fz16 promo__subtitle">Меня зовут Александра Смит</div>
-            <h1 class="title title_fz48 promo__title">Я web-разработчик из города Москва</h1>
+            <!-- <div class="title title_fz16 promo__subtitle">Меня зовут Александра Смит</div> -->
+            <h1 class="title title_fz48 promo__title">Ремонт пк и ноутбуков в Екатеринбурге</h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>
                 <a href="#" class="promo__link">Про меня</a>
@@ -132,7 +164,7 @@
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
-                    <div class="title title_fz36 about__subtitle">Меня зовут Александра</div>
+                    <div class="title title_fz36 about__subtitle">Меня зовут Александр</div>
                     <div class="divider"></div>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div>
@@ -392,6 +424,96 @@
         </div>
     </section>
 
+    <section class="reviews">
+        <div class="container">
+
+            <div class="title title_fz20 reviews__title">Отзывы наших клиентов</div>
+            <div class="reviews__divider"></div>
+            <div class="title title_fz16 reviews__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
+        </div>  
+            <div class="reviews__inner">
+                <div class="reviews__item">
+                    <div class="reviews__item-img"><img src="img/reviews/feed_1.png" alt=""></div>
+                    <div class="reviews__item-title">Ирина Иванченко</div>
+                    <div class="reviews__item-descr">
+                        ITremont выполнили работу в срок, быстро и квалифицированно.    Большое спасибо! Попутно нашли пару небольших проблемок и устранили их. Советую данный сервис!
+                        Через некоторое время решила обновить комплектующие - не раздумывая обратилась туда же.
+                        Спасибо, ITremont!</div>
+                </div>
+
+                <div class="reviews__item">
+                    <div class="reviews__item-img"><img src="img/reviews/feed_2.png" alt=""></div>
+                    <div class="reviews__item-title">Иван Сёмочкин</div>
+                    <div class="reviews__item-descr">   
+                        Спасли мой (казалось мне) безнадёжный компьютер, отремонтировали профессионально и быстро. Рекомендую, как качественный компьютерный сервис.
+                        С ними успел подготовиться к своему учебному проекту! Спасибо!!!</div>
+                </div>
+
+                <div class="reviews__item">
+                    <div class="reviews__item-img"><img src="img/reviews/feed_3d.png" alt=""></div>
+                    <div class="reviews__item-title">Тамара Павловна</div>
+                    <div class="reviews__item-descr">
+                        Сервис отлично справился с необходимой работой. Быстро приехал мастер, провел диагностику, обнаружил проблемы и устранил проблему. Все доступно объяснил мне и внукам, был вежлив и компетентен. Ноутбук восстановлен. Спасибо за работу. Рекомендую кто ищет профессиональный сервис по ремонту компьютерной техники.
+                        Спасибо данному сервису</div>
+                </div>
+            </div>
+            <div class="reviews__divider bottom"></div>
+        
+
+        
+        
+    </section>
+
+
+
+    <section class="promotion">
+        
+        <div class="container">
+            <div class="title title_fz20 promotion__title">Скидки</div>
+            <div class="promotion__divider"></div>
+
+            <div class="promotion__wraper">
+
+                <div class="promotion__text">
+                    <div class="title">Акция для новых клиентов!</div>
+                    <div class="promotion__descr">
+<!--                         Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
+                        Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
+                        <br><br>
+                        Акция закончится 20 мая в 00:00  -->
+                    </div>
+                </div>
+                <div class="promotion__timer">
+                    <div class="title">Осталось до конца акции:</div>
+                    <div class="timer">
+                        <div class="timer__block">
+                            <span id="days">12</span>
+                            день
+                        </div>
+                        <div class="timer__block">
+                            <span id="hours">20</span>
+                            часов
+                        </div>
+                        <div class="timer__block">
+                            <span id="minutes">56</span>
+                            минут
+                        </div>
+                        <div class="timer__block">
+                            <span id="seconds">20</span>
+                            секунд
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+
     <section class="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
@@ -479,7 +601,7 @@
 
             </div>
             <div class="price__btns">
-                <button class="btn">Подробнее</button>
+                <button data-modal="consultation" class="btn">Подробнее</button>
             </div>
 
             
@@ -522,7 +644,7 @@
                         </div>
                         <div class="contacts__input">
                             <input required name="phone" id="phone" type="phone">
-                            <label for="email">Ваш телефон</label>
+                            <label for="phone">Ваш телефон</label>
                         </div>
 
                         <div class="contacts__textarea">
@@ -541,7 +663,35 @@
             </div>
         </div>
     </section>
-    <script src="js/script.js"></script>
+
+    <div class="overlay__dark"></div>
+    <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="title title_fz16 modal__title">Получите бесплатную консультацию</div>
+        <div class="title title_fz14 modal__subtitle">Оставьте свои данные и мы вам перезвоним</div>
+        <form action="#">
+            <div class="modal__input">
+                <input required placeholder="Ваше имя" name="name" id="name" type="text">
+                <input required placeholder="Ваш телефон" name="phone" id="phone" type="phone">
+            </div>
+            <button class="btn modal__btn">заказать консультацию</button>
+        </form>
+
+
+    </div>
+
+    <div class="modal modal__mini" id="thanks" >
+        <div class="modal__close">&times;</div>
+        <div class="title title_fz16 modal__title">Спасибо за ваш заказ!</div>
+        <div class="title title_fz14 modal__subtitle">Наш менеджер скоро свяжется с вами</div>
+    </div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=5299"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
