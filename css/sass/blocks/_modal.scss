@@ -1,0 +1,70 @@
+.overlay__dark {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .56);
+    top: 0;
+    z-index: 1;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    padding: 40px 30px 10px 40px;
+    width: 400px;
+    min-height: 300px;
+    border: 1px solid black;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: #f2f2f2;
+    z-index: 1;
+
+
+    &__subtitle{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__input{
+        input {
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            border: none;
+            padding: 0 20px;
+            color: #4b4b4b;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        margin-bottom: 10px;
+    }
+    &__close {
+        position: absolute;
+        font-size: 40px;
+        top: 0px;
+        right: 10px;
+        cursor: pointer;
+        color: $main-color;
+        
+    }
+    &__btn {
+        width: 100%;
+        border-radius: 10px;
+        &:focus{
+            outline: none;
+            
+        }
+        &:active{
+            transform: scale(1.02);
+        }
+    }
+    &__mini{
+        min-height: 140px;
+        
+    }
+
+}
