@@ -1,5 +1,44 @@
 
+$(document).ready(function(){
 
+    $('.reviews__inner').slick({
+        centerMode: true,
+        centerPadding: '450px',
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/slider/next_arrow.png" alt=""></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/slider/back_arrow.png" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '400px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '400px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+          ]
+    });
+
+});
 
 
 const hamburger = document.querySelector('.hamburger'),
@@ -14,13 +53,13 @@ const hamburger = document.querySelector('.hamburger'),
     
 
 
-/* hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
     menu.classList.add('active');
-}); */
+}); 
 
-/* closeElem.addEventListener('click', () => {
+closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
-}); */
+});
 
 
 
@@ -103,19 +142,7 @@ function setClock(selector, endtime) {
 setClock('.timer', deadline);
 
 
-$(document).ready(function(){
 
-    $('.reviews__inner').slick({
-        centerMode: true,
-        centerPadding: '450px',
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/slider/next_arrow.png" alt=""></button>',
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/slider/back_arrow.png" alt=""></button>'
-    });
-
-});
 
 
 $('form').submit(function(e) {
