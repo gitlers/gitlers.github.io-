@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     $('.reviews__inner').slick({
         centerMode: true,
-        centerPadding: '450px',
+        centerPadding: '360px',
         infinite: true,
         speed: 300,
         slidesToShow: 1,
@@ -11,10 +11,18 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev"><img src="../icons/slider/back_arrow.png" alt=""></button>',
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '300px',
+                    slidesToShow: 1
+                }
+            },
+            {
                 breakpoint: 993,
                 settings: {
                     centerMode: true,
-                    centerPadding: '400px',
+                    centerPadding: '70px',
                     slidesToShow: 1
                 }
             },
@@ -22,16 +30,25 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     centerMode: true,
-                    centerPadding: '400px',
+                    centerPadding: '10px',
                     slidesToShow: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
-                    arrows: false,
+
                     centerMode: true,
                     centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 375,
+                settings: {
+
+                    centerMode: true,
+                    centerPadding: '20px',
                     slidesToShow: 1
                 }
             }
@@ -91,7 +108,7 @@ modal__close.addEventListener('click', () =>{
 
 
 
-const deadline = '2021-02-01';
+const deadline = '2021-02-04';
 function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
         days = Math.floor( (t/(1000*60*60*24)) ),

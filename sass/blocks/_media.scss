@@ -189,6 +189,22 @@
         }
 
     }
+    .reviews {
+        .slick-prev.slick-arrow{
+            left: 37%;
+        }
+        .slick-next.slick-arrow{
+            right: 37%;
+        }
+        &__item {
+            &-descr{
+                padding: 0 0px 0 0px;
+            }
+        }
+        &__divider{
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -319,6 +335,18 @@
         }
 
     }
+    .reviews{
+        padding-bottom: 60px;
+        .slick-prev.slick-arrow{
+            left: 32%;
+        }
+        .slick-next.slick-arrow{
+            right: 32%;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -437,6 +465,21 @@
         }
 
     }
+    .reviews{
+        .slick-prev.slick-arrow{
+            left: 30%;
+        }
+        .slick-next.slick-arrow{
+            right: 30%;
+        }
+        &__subtitle{
+            font-size: 12px;
+        }
+        &__divider.bottom{
+            margin-top: 30px;
+        }
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -451,6 +494,26 @@
         }
         &__contacts{
             display: none;
+        }
+    }
+    .reviews{
+        padding-bottom: 50px;
+        .slick-prev.slick-arrow{
+            left: 26%;
+        }
+        .slick-next.slick-arrow{
+            right: 26%;
+        }
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__divider.bottom{
+            margin-top: 20px;
+        }
+        &__item {
+            &-descr{
+                font-size: 14px;
+            }
         }
     }
 }
@@ -500,8 +563,63 @@
         }
 
     }
+    .modal{
+        padding: 22px 30px 10px 21px;
+        width: 340px;
+        &__title{
+            font-size: 15px;
+        }
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__close{
+            top: -10px;
+            right: 3px;
+        }
+    }  
+}
 
 
 
-    
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .modal{
+        padding: 22px 30px 10px 21px;
+        width: 295px;
+        &__title{
+            font-size: 13px;
+        }
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__close{
+            top: -10px;
+            right: 3px;
+        }
+    }  
+
+    .reviews{
+        .slick-prev.slick-arrow{
+            left: 22%;
+        }
+        .slick-next.slick-arrow{
+            right: 22%;
+        }
+        &__subtitle{
+            font-size: 12px;
+        }
+        &__divider.bottom{
+            margin-top: 20px;
+        }
+        &__item {
+            &-descr{
+                font-size: 12px;
+            }
+        }
+    }
+
 }

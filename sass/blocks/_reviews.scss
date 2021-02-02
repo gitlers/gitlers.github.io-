@@ -74,7 +74,7 @@
     } 
 
     &__inner{
-        width: 1400px;
+        width: 100%;
         margin: 0 auto;
 
     }
@@ -96,6 +96,11 @@
 
         &-title{
             margin-bottom: 19px;
+        }
+        &-descr{
+            font-size: 14px;
+            text-align: justify;
+            padding: 0 32px 0 29px;
         }
     }
 }
