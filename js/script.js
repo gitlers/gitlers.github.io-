@@ -23,7 +23,9 @@ $(document).ready(function(){
                 settings: {
                     centerMode: true,
                     centerPadding: '70px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: false,
                 }
             },
             {
@@ -31,7 +33,9 @@ $(document).ready(function(){
                 settings: {
                     centerMode: true,
                     centerPadding: '10px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: false,
                 }
             },
             {
@@ -40,7 +44,9 @@ $(document).ready(function(){
 
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: false,
                 }
             },
             {
@@ -49,7 +55,9 @@ $(document).ready(function(){
 
                     centerMode: true,
                     centerPadding: '20px',
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    dots: true,
+                    arrows: false,
                 }
             }
           ]
@@ -60,6 +68,7 @@ $(document).ready(function(){
 
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
+      menu__link = document.querySelectorAll('.menu__link a')
       closeElem = document.querySelector('.menu__close'),
       modal = document.querySelector('.modal'),
       consultation_btn = document.querySelectorAll('[data-modal=consultation]'),
@@ -68,6 +77,7 @@ const hamburger = document.querySelector('.hamburger'),
       promotion = document.querySelector('.promotion__descr');
 
     
+
 
 
 hamburger.addEventListener('click', () => {
@@ -108,7 +118,7 @@ modal__close.addEventListener('click', () =>{
 
 
 
-const deadline = '2021-02-04';
+const deadline = '2021-06-10';
 function getTimeRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date()),
         days = Math.floor( (t/(1000*60*60*24)) ),
@@ -149,7 +159,7 @@ function setClock(selector, endtime) {
         hours.innerHTML = getZero(t.hours);
         minutes.innerHTML = getZero(t.minutes);
         seconds.innerHTML = getZero(t.seconds);
-        promotion.innerHTML = "Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. Каждому, кто оформит заказ, будет предоставлена скидка в размере <span>30%!</span><br><br>Акция закончится  "+ (t.days+1)+"  мая в 00:00";
+        promotion.innerHTML = "Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. Каждому, кто оформит заказ, будет предоставлена скидка в размере <span>30%!</span><br><br>Акция закончится  "+ (t.days+9)+"  мая в 00:00";
 
         if (t.total <= 0) {
             clearInterval(timeInterval);
@@ -177,3 +187,18 @@ $('form').submit(function(e) {
     });
     return false;
 });
+
+
+$(function(){
+        $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
+});
+
+menu__link.forEach((item) =>{
+    item.addEventListener('click', ()=>{
+        menu.classList.toggle('active')
+    });
+}); 
