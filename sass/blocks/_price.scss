@@ -6,7 +6,7 @@
         display: grid;
         grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
         grid-auto-rows: minmax(45px, auto);
-        row-gap: 15px;
+        row-gap: 25px;
         justify-content: space-between;
     }
     &__technics{
@@ -17,7 +17,7 @@
     &__item {
         position: relative;
         display: grid;
-        grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+        grid-template: repeat(2, minmax(21px, auto)) / auto 95px;
         row-gap: 5px;
         padding-left: 25px;
         &:before {
@@ -47,7 +47,10 @@
         margin-top: 20px;
         text-align: center;
         button {
+            color: #fff;
             width: 200px;
+            border-radius: 5px;
+            outline: none;
         } 
     }
 }

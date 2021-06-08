@@ -1,5 +1,5 @@
 .contacts {
-    padding: 120px 0 90px 0;
+    padding: 40px 0 90px 0;
     &__wrapper {
         padding: 0 35px 0 52px;
         display: grid;
@@ -91,6 +91,8 @@
         }
     }
     &__btn {
+        color: #fff;
+        border-radius: 5px;
         border: none;
         font-weight: bold;
         font-size: 14px;

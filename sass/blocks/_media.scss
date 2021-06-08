@@ -7,6 +7,15 @@
     .container {
         max-width: 960px;
     }
+    .works-path__top{
+        div{
+            margin-right: 270px;
+        }
+        
+    }
+    .works-path__item--bottom{
+        margin-left: 260px;
+    }
     .about {
         &__wrapper {
             grid-template-columns: 400px 520px;
@@ -85,6 +94,18 @@
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .reviews__divider{
+        display: none;
+    }
+    .works-path__top{
+        div{
+            margin-right: 80px;
+        }
+        
+    }
+    .works-path__item--bottom{
+        margin-left: 138px;
     }
     .header {
         &__wraper {
@@ -211,6 +232,67 @@
     .container {
         max-width: 540px;
     }
+    .works-path__inner{
+        padding: 40px 20px 0 20px;
+        
+    }
+    .works-path__top{
+        
+        &:before{
+            left: -8px;
+            top: -15px;
+        }
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding-left: 43px;
+        div{
+            
+            position: relative;
+            padding-bottom: 40px;
+            &:before{
+                position: absolute;
+                content: "";
+                background-color: $main-color;
+                width: 40px;
+                height: 2px;
+                left: -43px;
+                top: 21px;
+            }
+            &:nth-last-child(1):before{
+                width: 40px;
+                height: 2px;
+                left: -43px;
+                top: 21px;
+            }
+        }
+        border: none;
+        border-left: 2px solid $main-color;
+        
+    }
+    .works-path__bottom{
+        display: block;
+        padding-left: 43px;
+        border-left: 2px solid $main-color;
+        
+    }
+    .works-path__item{
+        max-width: unset;
+    }
+    .works-path__item--bottom{
+        margin-left: 0;
+        padding-bottom: 40px;
+        &:nth-last-child(1){
+            padding-bottom: 0;
+        }
+        &:before{
+            width: 40px;
+            height: 2px;
+            left: -43px;
+            top: 21px;
+        }
+    }
+
     .title {
         &_fz48 {
             font-size: 28px;
@@ -286,7 +368,7 @@
         padding-top: 40px;
     }
     .price {
-        padding-top: 40px;
+        padding-top: 80px;
         &__wrapper {
             margin-top: 20px;
             justify-content: center;
@@ -353,6 +435,13 @@
     .container {
         width: 100%;
         padding: 0 10px;
+    }
+    .works-path__inner{
+        padding: 40px 5px 0 5px;
+        
+    }
+    .menu__contact{
+        display: block;
     }
     .title {
         &_fz48 {

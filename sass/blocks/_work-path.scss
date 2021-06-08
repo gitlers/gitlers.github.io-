@@ -1,0 +1,103 @@
+.works-path{
+    &__inner{
+        padding: 79px 0 30px;
+        
+    }
+    &__title{
+        position: relative;
+        text-align: center;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background: $main-color;
+            transform: translate(-50%, -80%);
+            z-index: -1;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 3px;
+            background-color: $main-color;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__bottom{
+        display: flex;
+    }
+    &__top{
+        display: flex;
+        padding-bottom: 37px;
+        margin-bottom: 40px;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: $main-color;
+            left: 0;
+            bottom: -8px;
+            border-radius: 50%;
+        }
+        div{
+            position: relative;
+            margin-right: 336px;
+            &:nth-last-child(1){
+                margin-right: 0;
+                &:before{
+                    position: absolute;
+                    content: "";
+                    height: 20px;
+                    width: 2px;
+                    background-color: rgba($main-color, 0.7);
+                    left: 0;
+                    bottom: -37px;
+                }
+            }
+
+        }
+        border-bottom: 2px solid rgba($main-color,0.7);
+        
+    }
+    &__img{
+        padding-right: 10px;
+    }
+    &__text{
+        padding-top: 13px;
+        font-family: 'OpenSans-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    &__item{
+        
+        max-width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: start;
+        &--bottom{
+            margin-left: 306px;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 2px;
+                background-color: rgba($main-color, 0.7);
+                left: 0;
+                top: -40px;
+            }
+        }
+    }
+}
